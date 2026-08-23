@@ -1,0 +1,39 @@
+---
+description: Never use inline styles; keep all styling in Tailwind or external CSS
+alwaysApply: true
+---
+
+# No inline styles
+
+Never write inline styles in any file. All styling must live outside the markup.
+
+**Do not use:**
+
+- React `style={{ ... }}` or `style={dynamicObject}`
+- HTML `style="..."` attributes
+- `<style>` / `<style jsx>` blocks in components
+- CSS-in-JS that injects styles at the call site (styled-components, Emotion `css`, etc.)
+
+**Do use:**
+
+- Tailwind utility classes via `className` (preferred in this project)
+- External stylesheets (`.css`) imported by the app or component
+- Shared class names defined in those stylesheets
+
+```tsx
+// BAD
+<button style={{ padding: "8px 12px", background: "#111" }}>Save</button>
+
+// GOOD
+<button className="px-3 py-2 bg-neutral-900">Save</button>
+```
+
+```html
+<!-- BAD -->
+<div style="display: flex; gap: 16px;"></div>
+
+<!-- GOOD -->
+<div class="flex gap-4"></div>
+```
+
+Dynamic look-and-feel (variants, state, theme) must still be class names or CSS custom properties defined in external CSS — never computed style objects in JSX/HTML.

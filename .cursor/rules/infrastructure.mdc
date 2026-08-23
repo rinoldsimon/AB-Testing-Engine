@@ -1,0 +1,10 @@
+---
+description: Environment parity, Docker, and SPA constraints
+alwaysApply: true
+---
+
+# Infrastructure and environment
+
+- Ensure environment parity by respecting `.ruby-version` and `.node-version` files.
+- The application must be fully containerized for local development using Docker Compose (Rails API, Vite Frontend, and PostgreSQL).
+- The frontend is a static SPA built with Vite; do not use Server-Side Rendering (SSR).

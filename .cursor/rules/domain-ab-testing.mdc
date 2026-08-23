@@ -1,0 +1,9 @@
+---
+description: A/B testing engine domain constraints
+alwaysApply: true
+---
+
+# A/B testing engine
+
+- The Assignment endpoint MUST be deterministic and sticky across server restarts without relying on synchronous DB writes.
+- Never mention any specific company or product names. Keep everything generic.

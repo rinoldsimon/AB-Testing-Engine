@@ -1,0 +1,12 @@
+---
+description: React, TypeScript, and frontend architecture conventions
+alwaysApply: true
+---
+
+# React frontend
+
+- **Typing:** Strict TypeScript. Define interfaces/types for all API responses and props. No `any` types.
+- **Architecture:** Keep API calls out of UI components. Create a dedicated API service layer (e.g., `src/services/api.ts`).
+- **UI/UX:** Use Tailwind CSS. Handle loading states and error states gracefully in the UI.
+- **Styling:** No inline styles. Use Tailwind classes or external CSS only (see `no-inline-styles`).
+- Adhere strictly to ESLint rules.
