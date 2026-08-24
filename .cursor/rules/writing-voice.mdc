@@ -1,0 +1,17 @@
+---
+description: Plain, human writing for UI copy, comments, and new docs
+alwaysApply: true
+---
+
+# Writing voice
+
+Write like a teammate left a note. Not like a launch post.
+
+- Do not use the em dash character (—). Use a period, a comma, or "and".
+- Contractions are fine. Short sentences are fine.
+- Skip brochure words: robust, seamless, leverage, utilize, comprehensive, cutting-edge.
+- Skip the template outline: Overview, Key features, In summary, It's important to note.
+- Prefer "do this" over "this enables users to". Prefer "if it breaks, return control" over "ensures a graceful fallback".
+- Nested bullets and perfect symmetry are optional. Clarity isn't.
+
+Applies to new UI copy, comments, commit subjects, and new docs. Do not rewrite existing docs unless asked.
