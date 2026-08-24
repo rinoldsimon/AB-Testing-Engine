@@ -8,5 +8,6 @@ alwaysApply: true
 - **Typing:** Strict TypeScript. Define interfaces/types for all API responses and props. No `any` types.
 - **Architecture:** Keep API calls out of UI components. Create a dedicated API service layer (e.g., `src/services/api.ts`).
 - **UI/UX:** Use Tailwind CSS. Handle loading states and error states gracefully in the UI.
+- **Responsive:** Layouts must work on phone, tablet, and desktop. Mobile-first Tailwind breakpoints (`sm` / `md` / `lg` / `xl`). Do not assume a wide screen. If a change affects layout, check a narrow viewport and a desktop one.
 - **Styling:** No inline styles. Use Tailwind classes or external CSS only (see `no-inline-styles`).
 - Adhere strictly to ESLint rules.

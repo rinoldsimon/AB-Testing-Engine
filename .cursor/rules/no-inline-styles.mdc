@@ -36,4 +36,4 @@ Never write inline styles in any file. All styling must live outside the markup.
 <div class="flex gap-4"></div>
 ```
 
-Dynamic look-and-feel (variants, state, theme) must still be class names or CSS custom properties defined in external CSS — never computed style objects in JSX/HTML.
+Dynamic look-and-feel (variants, state, theme) must still be class names or CSS custom properties defined in external CSS, never computed style objects in JSX/HTML.

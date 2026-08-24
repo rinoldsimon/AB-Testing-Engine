@@ -1,19 +1,11 @@
-# Experimentation Engine: Dashboard SPA
+# Dashboard SPA
 
-This is the React Single-Page Application (SPA) built with Vite, TypeScript, and Tailwind CSS. It serves as the configuration and reporting dashboard for marketing teams.
+React app (Vite, TypeScript, Tailwind). This is the config and reporting UI for the experiment engine.
 
-## Development
-
-**Note:** For full system setup (including the backend API), please see the [Root README](../README.md).
-
-If you are working strictly within the frontend context:
+Full stack setup lives in the [root README](../README.md). Only working in `frontend/`? Then:
 
 ```bash
-# Start standalone dev server
-npm run dev
-
-# Run TypeScript type-checking
-npm run tsc
-
-# Build for production
-npm run build
+npm run dev    # local server
+npm run tsc    # types
+npm run build  # production bundle
+```
